@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE androidx.constraintlayout.widget.ConstraintLayout [
+    <!ELEMENT androidx.constraintlayout.widget.ConstraintLayout (Button|TextView|EditText)*>
+    <!ATTLIST androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android CDATA #REQUIRED
+        xmlns:app CDATA #REQUIRED
+        xmlns:tools CDATA #REQUIRED
+        android:layout_width CDATA #REQUIRED
+        android:layout_height CDATA #REQUIRED
+        tools:context CDATA #REQUIRED>
+    <!ELEMENT Button (#PCDATA)>
+    <!ATTLIST Button
+        android:id CDATA #REQUIRED
+        android:layout_height CDATA #REQUIRED
+        android:layout_width CDATA #REQUIRED
+        android:onClick CDATA #REQUIRED
+        android:text CDATA #REQUIRED
+        app:layout_constraintBottom_toBottomOf CDATA #REQUIRED
+        app:layout_constraintEnd_toEndOf CDATA #REQUIRED
+        app:layout_constraintHorizontal_bias CDATA #REQUIRED
+        app:layout_constraintStart_toStartOf CDATA #REQUIRED
+        app:layout_constraintTop_toTopOf CDATA #REQUIRED
+        app:layout_constraintVertical_bias CDATA #REQUIRED>
+    <!ELEMENT TextView (#PCDATA)>
+    <!ATTLIST TextView
+        android:id CDATA #REQUIRED
+        android:layout_height CDATA #REQUIRED
+        android:layout_width CDATA #REQUIRED
+        android:text CDATA #IMPLIED
+        android:textAlignment CDATA #IMPLIED
+        android:textSize CDATA #IMPLIED
+        android:textStyle CDATA #IMPLIED
+        app:layout_constraintBottom_toBottomOf CDATA #REQUIRED
+        app:layout_constraintEnd_toEndOf CDATA #IMPLIED
+        app:layout_constraintEnd_toStartOf CDATA #IMPLIED
+        app:layout_constraintHorizontal_bias CDATA #REQUIRED
+        app:layout_constraintStart_toStartOf CDATA #REQUIRED
+        app:layout_constraintTop_toTopOf CDATA #REQUIRED
+        app:layout_constraintVertical_bias CDATA #REQUIRED>
+    <!ELEMENT EditText (#PCDATA)>
+    <!ATTLIST EditText
+        android:ems CDATA #REQUIRED
+        android:id CDATA #REQUIRED
+        android:inputType CDATA #REQUIRED
+        android:layout_height CDATA #REQUIRED
+        android:layout_width CDATA #REQUIRED
+        app:layout_constraintBottom_toBottomOf CDATA #REQUIRED
+        app:layout_constraintEnd_toEndOf CDATA #REQUIRED
+        app:layout_constraintHorizontal_bias CDATA #REQUIRED
+        app:layout_constraintStart_toStartOf CDATA #REQUIRED
+        app:layout_constraintTop_toTopOf CDATA #REQUIRED
+        app:layout_constraintVertical_bias CDATA #REQUIRED>
+    ]>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculadora"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.249" />
+
+    <Button
+        android:id="@+id/sumar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="cambiar_suma"
+        android:text="Sumar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.236"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.393" />
+
+    <Button
+        android:id="@+id/dividir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="cambiar_division"
+        android:text="Dividir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.801"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.493" />
+
+    <Button
+        android:id="@+id/multiplicar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="cambiar_multiplicacion"
+        android:text="Multiplicar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.219"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.493" />
+
+    <Button
+        android:id="@+id/restar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="cambiar_resta"
+        android:text="Restar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.806"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.393" />
+
+    <Button
+        android:id="@+id/factorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="cambiar_factorial"
+        android:text="Factorial"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.588" />
+
+    <Button
+        android:id="@+id/fibonacci"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="cambiar_fibonacci"
+        android:text="Fibonacci"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.682" />
+
+    <Button
+        android:id="@+id/potencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="cambiar_potencia"
+        android:text="Potencia"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.827"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.588" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
